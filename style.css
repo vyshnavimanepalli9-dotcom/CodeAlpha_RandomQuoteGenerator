@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    padding: 20px;
+}
+
+.quote-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.quote-card h1 {
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.quote-box {
+    padding: 25px;
+    margin-bottom: 30px;
+
+    border-left: 5px solid #667eea;
+    background: #f5f6ff;
+}
+
+#quote {
+    font-size: 22px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+#author {
+    font-size: 17px;
+    font-weight: normal;
+}
+
+#newQuoteBtn {
+    border: none;
+    padding: 14px 30px;
+
+    background: #667eea;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    border-radius: 30px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#newQuoteBtn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+@media (max-width: 600px) {
+
+    .quote-card {
+        padding: 25px;
+    }
+
+    .quote-card h1 {
+        font-size: 24px;
+    }
+
+    #quote {
+        font-size: 18px;
+    }
+}
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+#copyQuoteBtn {
+    border: none;
+    padding: 14px 30px;
+
+    background: #f1f1f1;
+    color: #333;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    border-radius: 30px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#copyQuoteBtn:hover {
+    transform: translateY(-2px);
+    background: #e2e2e2;
+}
+
+#copyMessage {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.favorites-section {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.favorites-section h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.favorite-item {
+    background: #f5f6ff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.favorite-item p {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.favorite-item button {
+    border: none;
+    background: #ff6b6b;
+    color: white;
+    padding: 7px 12px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#favoriteBtn {
+    border: none;
+    padding: 14px 30px;
+    background: #ffe4e6;
+    color: #d6336c;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#favoriteBtn:hover {
+    transform: translateY(-2px);
+}
+.quote-box {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.quote-box:hover {
+    transform: translateY(-3px);
+}
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    .quote-card {
+        padding: 22px 18px;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .button-group button {
+        width: 100%;
+    }
+
+    .favorites-section {
+        margin-top: 25px;
+    }
+}
+#favoritesList > p {
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+    padding: 10px;
+}
